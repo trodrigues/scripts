@@ -62,6 +62,7 @@ var hideNotification = function(item, id, re){
 
 var notificationRegexps = [
     /are now friends/,
+    /is now friend/,
     /became a fan/,
     /joined the group/
 ];
