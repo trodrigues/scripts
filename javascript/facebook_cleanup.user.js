@@ -28,8 +28,7 @@
 // ==UserScript==
 // @name          Facebook cleanup
 // @namespace
-// @description   Cleanup some annoying stuff from your facebook timeline
-// like people who add new friends, fans and groups. English only.
+// @description   Cleanup some annoying stuff from your facebook timeline like people who add new friends, fans and groups. English only. Might have some delay.
 // @include       http://*facebook.com/home.php*
 // ==/UserScript==
 
