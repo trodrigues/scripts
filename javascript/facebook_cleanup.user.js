@@ -64,6 +64,7 @@ var notificationRegexps = [
     /are now friends/,
     /is now friend/,
     /became a fan/,
+    /became fans/,
     /joined the group/
 ];
 
