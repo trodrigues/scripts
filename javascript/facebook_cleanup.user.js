@@ -54,7 +54,7 @@ var getNode = function(node, children){
 
 var hideNotification = function(item, id, re){
    if(item.innerHTML.search(re) >= 0){
-        GM_addStyle("#"+ id +" {display:none;}");
+        document.getElementById(id).style.display = "none";
         return true;
     }
     return false;
@@ -138,6 +138,6 @@ var main = function(){
     }
 };
 main();
-document.addEventListener("mouseover", main);
+//document.addEventListener("mouseover", main);
 
 })();
