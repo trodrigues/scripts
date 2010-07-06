@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ "$2" = "check" ] ; then
+    VBoxManage getextradata "$1" enumerate
+    exit 0
+fi
+
 if [ $# -ge 4 ] ; then
     vmname=$1
     service=$2
