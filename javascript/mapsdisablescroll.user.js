@@ -27,20 +27,16 @@
 // @name           Disable Google Maps Scroll
 // @namespace      http://trodrigues.net
 // @description    Disables Google Maps Scroll Zoom feature
-// @include        http://maps.google.com/
-// @include        http://maps.google.pt/
+// @include        http://maps.google.com*
+// @include        http://maps.google.pt*
 // ==/UserScript==
 
-window.addEventListener('load', function() {
-  setTimeout(function(){
-      var cb = function(e){
-          e.preventDefault();
-          e.stopPropagation();
-          return false;
-      };
-      var childs = document.getElementById("map").childNodes;
-      for(var i=0, l=childs.length; i<l; i++){
-          childs[i].addEventListener("mousewheel", cb, false);
-      }
-  }, 750);
-}, false);
+var cb = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  return false;
+};
+var childs = document.getElementById("map").childNodes;
+for(var i=0, l=childs.length; i<l; i++){
+  childs[i].addEventListener("mousewheel", cb, false);
+}
