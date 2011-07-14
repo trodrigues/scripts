@@ -39,4 +39,5 @@ var cb = function(e){
 var childs = document.getElementById("map").childNodes;
 for(var i=0, l=childs.length; i<l; i++){
   childs[i].addEventListener("mousewheel", cb, false);
+  childs[i].addEventListener("DOMMouseScroll", cb, false);
 }
